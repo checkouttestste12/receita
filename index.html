@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmácia Online - Medicamentos Sem Receita | Fale Conosco no WhatsApp</title>
+    <meta name="description" content="Sua farmácia online de confiança para medicamentos sem receita. Atendimento rápido e entrega para todo o Brasil. Fale conosco pelo WhatsApp.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-info">
+                    <span><i class="fab fa-whatsapp"></i> (11) 96251-5809</span>
+                    <span><i class="fas fa-envelope"></i> contato@farmaciaonline.com</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="header-main">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <h1>FARMÁCIA <span>ONLINE</span></h1>
+                        <p>Sua Saúde em Primeiro Lugar</p>
+                    </div>
+                    
+                    <div class="payment-methods">
+                        <div class="payment-icon pix">Pix</div>
+                        <div class="payment-icon card">Cartão</div>
+                        <div class="payment-icon boleto">Boleto</div>
+                    </div>
+                    
+                    <div class="header-actions">
+                        <button class="btn btn-outline">Ver Produtos</button>
+                        <button class="btn btn-primary">(11) 96251-5809</button>
+                    </div>
+                    
+                    <!-- Mobile Menu Toggle -->
+                    <button class="mobile-menu-toggle" aria-label="Abrir menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#produtos">Produtos</a></li>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Sua saúde e bem-estar ao alcance de um <span class="highlight">clique</span></h1>
+                <p>Medicamentos sem receita, produtos de higiene e beleza com a qualidade que você merece. Fale conosco e receba em casa!</p>
+                
+                <div class="search-form">
+                    <h3>Busque seu medicamento agora</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="medicamento" class="form-input" placeholder="Qual medicamento você procura?...">
+                        </div>
+                    </div>
+                    <button class="btn btn-whatsapp" onclick="consultarWhatsApp()">
+                        <i class="fab fa-whatsapp"></i> Falar com um Farmacêutico
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-header">
+                <h2>Sua farmácia online de confiança</h2>
+                <p>Números que comprovam nossa dedicação em fornecer o melhor atendimento e os melhores produtos para sua saúde.</p>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-number">10K+</div>
+                    <div class="stat-title">Clientes Satisfeitos</div>
+                    <div class="stat-desc">Confiam em nossos serviços</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <div class="stat-number">2K+</div>
+                    <div class="stat-title">Produtos em Catálogo</div>
+                    <div class="stat-desc">Sempre disponíveis para você</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="stat-number">4.8</div>
+                    <div class="stat-title">Avaliação Média</div>
+                    <div class="stat-desc">Base em mais de 2mil avaliações</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <div class="stat-number">Entrega</div>
+                    <div class="stat-title">Rápida e Segura</div>
+                    <div class="stat-desc">Para todo o Brasil</div>
+                </div>
+            </div>
+            
+            <div class="quote">
+                <blockquote>
+                    "Trabalhamos com os melhores fornecedores para garantir a procedência e a qualidade de todos os nossos produtos, cuidando da sua saúde com responsabilidade."
+                </blockquote>
+                <cite>— Equipe Farmácia Online</cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section class="catalog" id="produtos">
+        <div class="container">
+            <div class="catalog-header">
+                <h2>Nosso Catálogo de Produtos</h2>
+                <p>Tudo que você precisa para sua saúde e bem-estar em um só lugar. Medicamentos, vitaminas, higiene e muito mais.</p>
+            </div>
+            
+            <div class="catalog-grid">
+                <div class="catalog-item">
+                    <div class="catalog-icon">
+                        <i class="fas fa-capsules"></i>
+                    </div>
+                    <h3>Medicamentos</h3>
+                    <p>Analgésicos, antitérmicos, anti-inflamatórios e mais</p>
+                    <ul>
+                        <li>Analgésicos</li>
+                        <li>Antitérmicos</li>
+                        <li>Anti-inflamatórios</li>
+                        <li>Antialérgicos</li>
+                        <li>Vitaminas</li>
+                    </ul>
+                    <button class="btn btn-catalog" onclick="consultarCategoria('medicamentos')">
+                        Consultar no WhatsApp
+                    </button>
+                </div>
+                
+                <div class="catalog-item">
+                    <div class="catalog-icon">
+                        <i class="fas fa-pump-soap"></i>
+                    </div>
+                    <h3>Higiene e Beleza</h3>
+                    <p>Cuidados pessoais, dermocosméticos e produtos para cabelo</p>
+                    <ul>
+                        <li>Shampoos e Condicionadores</li>
+                        <li>Hidratantes</li>
+                        <li>Protetores Solares</li>
+                        <li>Desodorantes</li>
+                        <li>Maquiagem</li>
+                    </ul>
+                    <button class="btn btn-catalog" onclick="consultarCategoria('higiene-beleza')">
+                        Consultar no WhatsApp
+                    </button>
+                </div>
+                
+                <div class="catalog-item">
+                    <div class="catalog-icon">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <h3>Maternidade e Bebê</h3>
+                    <p>Fraldas, leites, pomadas e produtos para o cuidado do bebê</p>
+                    <ul>
+                        <li>Fraldas</li>
+                        <li>Lenços Umedecidos</li>
+                        <li>Pomadas</li>
+                        <li>Leites Infantis</li>
+                        <li>Acessórios</li>
+                    </ul>
+                    <button class="btn btn-catalog" onclick="consultarCategoria('maternidade-bebe')">
+                        Consultar no WhatsApp
+                    </button>
+                </div>
+                
+                <div class="catalog-item">
+                    <div class="catalog-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Saúde e Bem-Estar</h3>
+                    <p>Suplementos, vitaminas, produtos ortopédicos e mais</p>
+                    <ul>
+                        <li>Suplementos Alimentares</li>
+                        <li>Vitaminas e Minerais</li>
+                        <li>Produtos Ortopédicos</li>
+                        <li>Aparelhos de Pressão</li>
+                        <li>Termômetros</li>
+                    </ul>
+                    <button class="btn btn-catalog" onclick="consultarCategoria('saude-bem-estar')">
+                        Consultar no WhatsApp
+                    </button>
+                </div>
+                
+                <div class="catalog-item">
+                    <div class="catalog-icon">
+                        <i class="fas fa-first-aid"></i>
+                    </div>
+                    <h3>Primeiros Socorros</h3>
+                    <p>Curativos, antissépticos, esparadrapos e kits completos</p>
+                    <ul>
+                        <li>Curativos</li>
+                        <li>Antissépticos</li>
+                        <li>Esparadrapos</li>
+                        <li>Algodão</li>
+                        <li>Kits de Primeiros Socorros</li>
+                    </ul>
+                    <button class="btn btn-catalog" onclick="consultarCategoria('primeiros-socorros')">
+                        Consultar no WhatsApp
+                    </button>
+                </div>
+                
+                <div class="catalog-item">
+                    <div class="catalog-icon">
+                        <i class="fas fa-tooth"></i>
+                    </div>
+                    <h3>Saúde Bucal</h3>
+                    <p>Escovas, pastas, enxaguantes e produtos para higiene oral</p>
+                    <ul>
+                        <li>Escovas de Dente</li>
+                        <li>Pastas de Dente</li>
+                        <li>Enxaguantes Bucais</li>
+                        <li>Fio Dental</li>
+                        <li>Próteses Dentárias</li>
+                    </ul>
+                    <button class="btn btn-catalog" onclick="consultarCategoria('saude-bucal')">
+                        Consultar no WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Não encontrou o que procura?</h2>
+                <p>Nossa equipe de farmacêuticos está pronta para te ajudar a encontrar o medicamento ou produto ideal. Entre em contato e receba um atendimento personalizado.</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary" onclick="solicitarOrcamento()">Falar com Farmacêutico</button>
+                    <button class="btn btn-secondary" onclick="falarEspecialista()">Atendimento Personalizado</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Models (Adapted to Popular Products) -->
+    <section class="popular-models">
+        <div class="container">
+            <h2>Produtos Mais Procurados</h2>
+            <div class="models-grid">
+                <button class="model-btn" onclick="selecionarProduto('analgesico')">Analgésicos</button>
+                <button class="model-btn" onclick="selecionarProduto('vitamina-c')">Vitamina C</button>
+                <button class="model-btn" onclick="selecionarProduto('protetor-solar')">Protetor Solar</button>
+                <button class="model-btn" onclick="selecionarProduto('termometro')">Termômetros</button>
+                <button class="model-btn" onclick="selecionarProduto('curativo')">Curativos</button>
+                <button class="model-btn" onclick="selecionarProduto('sabonete-liquido')">Sabonete Líquido</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Float -->
+    <div class="whatsapp-float" onclick="abrirWhatsApp()">
+        <i class="fab fa-whatsapp"></i>
+        <span class="notification-badge">1</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
